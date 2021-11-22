@@ -57,7 +57,7 @@ jobs:
         sed -i "s/target\//$TARGET\//g" files/etc/opkg/distfeeds.conf
         sed -i "s/platform/$PLATFORM/g" files/etc/opkg/distfeeds.conf
         chmod +x scripts/*
-        ./scripts/preset-clash-core.sh
+        ./scripts/preset-clash-core.sh armv8
         ./scripts/preset-terminal-tools.sh
         tar -xJf *.tar.xz
         rm *.tar.xz
