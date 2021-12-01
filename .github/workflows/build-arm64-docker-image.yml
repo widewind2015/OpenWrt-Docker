@@ -3,8 +3,6 @@ name: Arm64 Docker Image
 on:
   repository_dispatch:
   workflow_dispatch:
-  schedule:
-    - cron: 0 3 * * *
 
 env:
   PREFIX_URL: https://openwrt.cc/releases/targets
